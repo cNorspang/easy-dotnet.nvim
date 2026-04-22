@@ -250,8 +250,7 @@ function M:get_default_project()
     job = nil,
     method = "workspace/get-default-launch-profile",
     params = { ["_"] = "" },
-    cb = nil,
-    on_crash = opts.on_crash,
+    cb = nil
   })()
 end
 
