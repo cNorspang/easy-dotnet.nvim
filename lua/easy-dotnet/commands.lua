@@ -252,7 +252,15 @@ M.project = {
       },
     },
     launchProfile = {
-      handle = function() require("easy-dotnet.rpc.controllers.workspace").get_default_project() end
+      handle = function(args, _)
+        local client = require("easy-dotnet.rpc.rpc").global_rpc_client
+        client:initialize(
+          function()
+            client.workspace:get_default_project()
+          end
+        )
+      end,
+      passthrough = true,
     }
   },
 }

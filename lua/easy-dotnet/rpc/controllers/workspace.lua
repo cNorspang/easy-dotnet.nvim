@@ -9,6 +9,7 @@
 ---@field build_solution fun(self: easy-dotnet.RPC.Client.Workspace, opts: easy-dotnet.RPC.Client.Workspace.BuildSolutionOpts): easy-dotnet.RPC.CallHandle
 ---@field test fun(self: easy-dotnet.RPC.Client.Workspace, opts: easy-dotnet.RPC.Client.Workspace.TestOpts): easy-dotnet.RPC.CallHandle
 ---@field test_solution fun(self: easy-dotnet.RPC.Client.Workspace, opts: easy-dotnet.RPC.Client.Workspace.TestOpts): easy-dotnet.RPC.CallHandle
+---@field get_default_project fun(self)
 
 ---@class easy-dotnet.RPC.Client.Workspace.RunOpts
 ---@field use_default boolean
