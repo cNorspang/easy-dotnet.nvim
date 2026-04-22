@@ -251,6 +251,9 @@ M.project = {
         },
       },
     },
+    launchProfile = {
+      handle = function() require("easy-dotnet.rpc.controllers.workspace").get_default_project() end
+    }
   },
 }
 
