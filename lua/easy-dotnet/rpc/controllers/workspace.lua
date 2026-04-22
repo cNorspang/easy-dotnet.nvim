@@ -242,4 +242,16 @@ function M:debug_attach(opts)
   })()
 end
 
+function M:get_default_project()
+  local helper = require("easy-dotnet.rpc.dotnet-client")
+  return helper.create_rpc_call({
+    client = self._client,
+    job = nil,
+    method = "workspace/get-default-launch-profile",
+    params = { ["_"] = "" },
+    cb = nil,
+    on_crash = opts.on_crash,
+  })()
+end
+
 return M
