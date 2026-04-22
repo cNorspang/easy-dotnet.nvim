@@ -249,7 +249,7 @@ function M:get_default_project()
     client = self._client,
     job = nil,
     method = "workspace/get-default-launch-profile",
-    params = { ["_"] = "" },
+    params = {},
     cb = nil
   })()
 end
