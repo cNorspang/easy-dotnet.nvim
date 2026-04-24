@@ -250,7 +250,7 @@ function M:get_default_project()
     job = nil,
     method = "workspace/get-default-launch-profile",
     params = {},
-    cb = function(res) print(res) end
+    cb = nil
   })()
 end
 
